@@ -16,7 +16,7 @@ public class DownloadPDF {
     public static void downloadPDF(String pdfname, String pdfurl) throws IOException {
         URL url = new URL(pdfurl);
         InputStream in = url.openStream();
-        FileOutputStream fos = new FileOutputStream(new File("/Users/siva-7333/Desktop/" + pdfname + ".pdf"));
+        FileOutputStream fos = new FileOutputStream(new File("/Users/siva/Desktop/" + pdfname + ".pdf"));
         int length = -1;
         byte[] buffer = new byte[1024];// buffer for portion of data from connection
         while ((length = in.read(buffer)) > -1) {
